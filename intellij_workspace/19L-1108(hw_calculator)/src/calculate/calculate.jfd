@@ -1,0 +1,314 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.FlowLayout ) {
+			"hgap": 1
+			"vgap": 1
+		} ) {
+			name: "Calculator"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+				"hgap": 0
+				"vgap": 0
+			} ) {
+				name: "panel1"
+				"preferredSize": new java.awt.Dimension( 330, 540 )
+				"border": new javax.swing.border.LineBorder( new java.awt.Color( 0, 137, 231, 255 ), 1, false )
+				"background": new java.awt.Color( 226, 225, 225, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+					name: "textfield"
+					"preferredSize": new java.awt.Dimension( 330, 210 )
+					"background": new java.awt.Color( 217, 216, 216, 255 )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "output"
+						"preferredSize": new java.awt.Dimension( 328, 90 )
+						"alignmentX": 0.0f
+						"alignmentY": 0.0f
+						"margin": new java.awt.Insets( 0, 0, 0, 0 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"foreground": sfield java.awt.Color gray
+						"font": new java.awt.Font( "Arial", 0, 17 )
+						"horizontalAlignment": 4
+						"editable": false
+						"background": new java.awt.Color( 217, 216, 216, 255 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "input"
+						"preferredSize": new java.awt.Dimension( 328, 100 )
+						"alignmentX": 0.0f
+						"alignmentY": 0.0f
+						"margin": new java.awt.Insets( 0, 0, 0, 0 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": new com.jformdesigner.model.SwingDerivedFont( "Arial", 1, 15, false )
+						"background": new java.awt.Color( 217, 216, 216, 255 )
+						"horizontalAlignment": 4
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "modbtn"
+					"text": "%"
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"alignmentY": 0.0f
+					"border": &LineBorder0 new javax.swing.border.LineBorder( new java.awt.Color( 217, 216, 216, 255 ), 1, false )
+					"background": &Color0 new java.awt.Color( 226, 225, 225, 255 )
+					"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "modbtn", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "modbtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "sqrtbtn"
+					"text": "√"
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"background": #Color0
+					"font": #SwingDerivedFont0
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sqrtbtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "x2btn"
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"background": #Color0
+					"font": #SwingDerivedFont0
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "x2btn", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "x2btn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "halfbtn"
+					"text": "1/x"
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"background": #Color0
+					"font": #SwingDerivedFont0
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "reciprocalbtn", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "halfbtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cebtn"
+					"text": "CE"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": #Color0
+					"font": #SwingDerivedFont0
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cebtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cbtn"
+					"text": "C"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": #Color0
+					"font": #SwingDerivedFont0
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cbtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "backbtn"
+					"text": "⌫"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": #Color0
+					"font": #SwingDerivedFont0
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backbtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "divbtn"
+					"text": "÷"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": #Color0
+					"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 7, false )
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "divbtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn7"
+					"text": "7"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": sfield java.awt.Color white
+					"font": &SwingDerivedFont2 new com.jformdesigner.model.SwingDerivedFont( null, 1, 5, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button32", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button32", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn7", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn8"
+					"text": "8"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": sfield java.awt.Color white
+					"font": #SwingDerivedFont2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn8", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn9"
+					"text": "9"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": sfield java.awt.Color white
+					"font": #SwingDerivedFont2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn9", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "mulbtn"
+					"text": "×"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": #Color0
+					"font": #SwingDerivedFont1
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mulbtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn4"
+					"text": "4"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": sfield java.awt.Color white
+					"font": #SwingDerivedFont2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn4", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn5"
+					"text": "5"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": sfield java.awt.Color white
+					"font": #SwingDerivedFont2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn5", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn6"
+					"text": "6"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": sfield java.awt.Color white
+					"font": #SwingDerivedFont2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn6", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "minusbtn"
+					"text": "-"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": #Color0
+					"font": #SwingDerivedFont1
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "minusbtn", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "minusbtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn1"
+					"text": "1"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": sfield java.awt.Color white
+					"font": #SwingDerivedFont2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn1", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn2"
+					"text": "2"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": sfield java.awt.Color white
+					"font": #SwingDerivedFont2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn2", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn3"
+					"text": "3"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": sfield java.awt.Color white
+					"font": #SwingDerivedFont2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn3", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "plusbtn"
+					"text": "+"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": #Color0
+					"font": #SwingDerivedFont1
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "plusbtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "plusminusbtn"
+					"text": "±"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": #Color0
+					"font": #SwingDerivedFont1
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "plusminusbtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn0"
+					"text": "0"
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": sfield java.awt.Color white
+					"font": #SwingDerivedFont2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btn0", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "pointbtn"
+					"text": "."
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": #Color0
+					"font": #SwingDerivedFont1
+					"selectedIcon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "pointbtn", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "equalbtn"
+					"text": "="
+					"alignmentY": 0.0f
+					"border": #LineBorder0
+					"preferredSize": new java.awt.Dimension( 80, 53 )
+					"background": #Color0
+					"font": #SwingDerivedFont1
+					"contentAreaFilled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "equalbtn", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 210, 25 )
+			"size": new java.awt.Dimension( 330, 565 )
+		} )
+	}
+}
